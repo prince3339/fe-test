@@ -6,4 +6,10 @@
     return element;
   }
 
+  function sum(a: any, b: any) {
+    return a + b;
+  }
+
   document.body.appendChild(component());
+
+  export default sum;
