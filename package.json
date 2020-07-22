@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "watch": "babel src --out-dir dist --extensions '.ts' --watch",
+    "build": "babel src --out-dir dist --extensions '.ts'",
+    "tsc": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "ts-loader": "^8.0.1",
-    "typescript": "^3.9.7",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "typescript": "^3.9.7"
   }
 }
